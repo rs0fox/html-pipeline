@@ -2,16 +2,12 @@ version: 0.2
 
 phases:
   install:
-    commands:
-      - echo "Installing dependencies..."
-      - npm install
-
+    runtime-versions:
+      nodejs: 12
   build:
     commands:
-      - echo "Building the project..."
-      - cd $CODEBUILD_SRC_DIR  # Navigate to the root directory of your source code
-      - npm run build  # Example build command
-
+      - echo Build started on `date`
+      - echo Build completed on `date`
 artifacts:
   files:
     - '**/*'

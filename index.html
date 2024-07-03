@@ -2,10 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My AWS Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Web App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #343a40;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: #6c757d;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my AWS-hosted website!</h1>
-    <p>This is a sample webpage hosted on Apache HTTP Server.</p>
+    <div class="container">
+        <h1>Welcome to My Web App</h1>
+        <p>This is a simple web page deployed using AWS CodeDeploy.</p>
+        <a href="#" class="button">Learn More</a>
+    </div>
 </body>
 </html>
