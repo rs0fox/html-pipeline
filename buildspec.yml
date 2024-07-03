@@ -11,7 +11,7 @@ phases:
 
   build:
     commands:
-      - cd /codebuild/output/src2299962806/src  # Navigate to your project directory
-      - ls -al  # Verify files in the directory
+      - cd src  # Assuming 'src' is the directory where your project resides
+      - ls -al  # List files to verify you're in the right directory
       - npm install
       - npm run build
