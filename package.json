@@ -2,22 +2,22 @@
     "name": "my-nodejs-app",
     "version": "1.0.0",
     "description": "A simple Node.js application",
-    "main": "index.js",  // Replace with the entry point of your application
+    "main": "index.js",  
     "scripts": {
-      "start": "node index.js",  // Replace with the command to start your application
-      "build": "npm run lint && npm run compile",  // Replace with build commands if needed
-      "lint": "eslint .",  // Example linting command
-      "compile": "webpack"  // Example compilation command
+      "start": "node index.js",  
+      "build": "npm run lint && npm run compile",  
+      "lint": "eslint .",  
+      "compile": "webpack" 
     },
     "author": "Your Name",
     "license": "MIT",
     "dependencies": {
-      // Add your dependencies here
+      
       "express": "^4.17.2",
       "body-parser": "^1.19.0"
     },
     "devDependencies": {
-      // Add development dependencies here
+     
       "eslint": "^7.32.0",
       "webpack": "^5.52.1"
     }
