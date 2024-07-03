@@ -2,16 +2,16 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 14
-
     commands:
-      - node --version
-      - npm --version
+      - echo "Installing dependencies..."
+      - npm install
 
   build:
     commands:
-      - cd /codebuild/output/src858187716/src
-      - ls -al  # List files to verify you're in the right directory
-      - npm install
-      - npm run build
+      - echo "Building the project..."
+      - cd $CODEBUILD_SRC_DIR  # Navigate to the root directory of your source code
+      - npm run build  # Example build command
+
+artifacts:
+  files:
+    - '**/*'
