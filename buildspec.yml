@@ -3,17 +3,9 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14
-  pre_build:
-    commands:
-      - npm install
+      nodejs: 14  # Adjust to match your project requirements
+
   build:
     commands:
-      - npm run build  # Adjust based on your build process
-  post_build:
-    commands:
-      - echo "Build completed on `date`"
-
-artifacts:
-  files:
-    - '**/*'
+      - npm install
+      - npm run build
