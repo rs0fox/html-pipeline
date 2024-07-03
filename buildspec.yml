@@ -3,13 +3,15 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14  # Specify the Node.js version required by your project
+      nodejs: 14
 
     commands:
-      - node --version  # Verify Node.js installation
-      - npm --version  # Verify npm installation
+      - node --version
+      - npm --version
 
   build:
     commands:
-      - npm install  # Install project dependencies
-      - npm run build  # Execute your build script
+      - cd /codebuild/output/src2299962806/src  # Navigate to your project directory
+      - ls -al  # Verify files in the directory
+      - npm install
+      - npm run build
