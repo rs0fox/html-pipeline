@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html  # Adjust destination based on your web server setup
+
+permissions:
+  - object: /var/www/html
+    pattern: "**"
+    owner: ec2-user  # Replace with appropriate user
+    group: apache  # Replace with appropriate group
+
+hooks:
+  ApplicationStart:
+    - location: scripts/start_server.sh
+      timeout: 300
+      runas: root  # Adjust runas based on your requirements
