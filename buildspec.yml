@@ -3,7 +3,14 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14  # Adjust to match your project requirements
+      nodejs: 14  # Specify the Node.js version required by your project
+
+    commands:
+      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash  # Install nvm (Node Version Manager)
+      - source ~/.nvm/nvm.sh  # Load nvm
+      - nvm install 14  # Install Node.js version 14
+      - node --version  # Verify Node.js installation
+      - npm --version  # Verify npm installation
 
   build:
     commands:
