@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix-like Video Streaming Website</title>
+    <title>TV Show 1</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,47 +45,46 @@
             padding: 20px;
         }
 
-        .thumbnail-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .episode-list {
+            list-style-type: none;
+            padding: 0;
             margin-top: 20px;
         }
 
-        .thumbnail {
-            width: 200px;
-            margin: 10px;
-            cursor: pointer;
+        .episode-list li {
+            margin-bottom: 10px;
         }
 
-        .thumbnail img {
-            width: 100%;
-            height: auto;
+        .episode-list li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .episode-list li a:hover {
+            color: #007bff;
         }
     </style>
 </head>
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="tv_shows.html">TV Shows</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
             <li><a href="#">Movies</a></li>
             <li><a href="#">My List</a></li>
         </ul>
     </div>
 
     <div class="main-content">
-        <h1>Welcome to our Video Streaming Website</h1>
+        <h1>TV Show 1</h1>
 
-        <div class="thumbnail-container">
-            <div class="thumbnail">
-                <a href="tv_show1.html"><img src="thumbnail1.jpg" alt="TV Show 1 Thumbnail"></a>
-            </div>
-            <div class="thumbnail">
-                <a href="tv_show2.html"><img src="thumbnail2.jpg" alt="TV Show 2 Thumbnail"></a>
-            </div>
-            <!-- Add more thumbnails and corresponding TV show pages as needed -->
-        </div>
+        <h2>Episodes:</h2>
+        <ul class="episode-list">
+            <li><a href="episode1.html">Episode 1</a></li>
+            <li><a href="episode2.html">Episode 2</a></li>
+            <!-- Add more episodes as needed -->
+        </ul>
     </div>
 </body>
 </html>
